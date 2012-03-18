@@ -6,12 +6,12 @@ Private Git hosting "solution" for OpenShift.
 
 Work in progress, please report issues.
 
-# Features
+## Features
 
 * git push and pull
 * auto-creation of repositories on demand
 
-# ToDo
+## ToDo
 
 * security
 * management
