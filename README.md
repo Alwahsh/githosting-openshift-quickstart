@@ -28,8 +28,8 @@ and enter the directory
 
 Add repositories as new remotes
 
-	git remote add githosting -m master git://github.com/marekjelen/openshift-githosting.git
-	git remote add template -m master git://github.com/marekjelen/openshift-jruby.git
+	git remote add githosting -m master git://github.com/openshift-quickstart/githosting-openshift-quickstart.git
+	git remote add template -m master git://github.com/openshift-quickstart/jruby-openshift-quickstart.git
 
 and pull them locally
 
