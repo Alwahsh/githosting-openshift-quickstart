@@ -20,21 +20,21 @@ Work in progress, please report issues.
 
 Create OpenShift application
 
-	rhc app create -a $name -t diy-0.1
+    rhc app create -a $name -t diy-0.1
 
 and enter the directory
 
-	cd $name
+    cd $name
 
-Add repositories as new remotes
+Add new remotes
 
-	git remote add githosting -m master git://github.com/openshift-quickstart/githosting-openshift-quickstart.git
-	git remote add template -m master git://github.com/openshift-quickstart/jruby-openshift-quickstart.git
+    git remote add githosting -m master git://github.com/openshift-quickstart/githosting-openshift-quickstart.git
+    git remote add template -m master git://github.com/openshift-quickstart/jruby-openshift-quickstart.git
 
 and pull them locally
 
     git pull -s recursive -X theirs githosting master
-	git pull -s recursive -X theirs template master
+    git pull -s recursive -X theirs template master
 
 configure your JRuby environment
 
@@ -43,11 +43,11 @@ configure your JRuby environment
 
 and deploy to OpenShift
 
-	git push origin master
+    git push origin master
 
 Now is your private Git hosting available at
 
-	http://$name-$namespace.rhcloud.com
+    http://$name-$namespace.rhcloud.com
 
 ## Configuration
 
@@ -55,4 +55,4 @@ Now is your private Git hosting available at
 
 If you have problem pushing big repositories, configure git's HTTP buffer to allow bigger payloads (run this command in your local repository)
 
-	git config http.postBuffer 524288000
+    git config http.postBuffer 524288000
