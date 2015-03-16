@@ -40,7 +40,7 @@ class GitServer
 
   def start
     GitServer.logger.info('Starting server')
-    @channel = @bootstrap.bind(InetSocketAddress.new(ENV['OPENSHIFT_INTERNAL_IP'], Integer(ENV['OPENSHIFT_INTERNAL_PORT'])))
+    @channel = @bootstrap.bind(InetSocketAddress.new(ENV['OPENSHIFT_DIY_IP'], Integer(ENV['OPENSHIFT_DIY_PORT'])))
   end
 
   def stop
